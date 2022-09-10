@@ -225,6 +225,7 @@ footer {
   margin-top: 8rem;
   display: inline-flex;
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-section .hero-links {
