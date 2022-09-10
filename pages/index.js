@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import UiHeaderSection from '../resource/ui/UiHeaderSection'
 import UiFooterSection from '../resource/ui/UiFooterSection'
+import ResidenceMapSection from '../resource/component/homepage/SectionResidenceMap'
+import SectionCarousel from '../resource/component/SectionCarousel'
+import UiCardExperience from '../resource/ui/UiCardExperience'
 
 export default function Home() {
   return (
@@ -37,6 +40,65 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="intro-section">
+          <div className="home-intro-section">
+            <div className="title-section">
+              <p className="heading-caps secondary-text">A collection of extraordinary life experiences made possible by a family of remarkable people</p>
+              <h2 className="home-intro-title">
+                The MORE Family Collection
+              </h2>
+            </div>
+            <div className="intro-container">
+              <p className="intro-content">Our people on the ground create highly personalised experiences to bring you closer to Mother Nature, the greatest teacher about the only things in life that really matter.</p>
+              <p className="intro-content">Our purpose is to help you open your eyes and heart, and reconnect with how &apos;wonder-full&apos; life is &#8209; whether in the company of loved ones or on your own.</p>
+              <p className="intro-content">We invite you to take a closer look at our Lodges and Hotels, found in some of Southern Africa&apos;s most beautiful and untouched destinations. And to immerse yourself in our experiences. They&apos;ll enrich your life.</p>
+              <h5 className="intro-content-bottom">Welcome to the family</h5>
+            </div>
+          </div>
+        </div>
+
+        <div className="residence-section">
+          <div className="residence-maps">
+            <div className="residence-map_heading">
+              <p className="heading-caps secondary-text">
+                More Destinations
+              </p>
+              <h3 className="sub-heading">
+                The MORE Family
+                <br />
+                Collection in Southern Africa
+              </h3>
+            </div>
+            <div className="residence-map_copy">
+              <p className="intro-content">Our Lodges, Boutique Hotels and Private Residences are found in Southern Africa&apos;s best leisure destinations, and combine to offer you the classic Southern African experience, with MORE Family Collection&apos;s signature &apos;golden thread&apos;.</p>
+              <p className="intro-content">Each of our Luxury Lodges is located in vast Big Five reserves, with private exclusive traversing.</p>
+            </div>
+          </div>
+
+          <div className="residence-map_maps">
+            <ResidenceMapSection />
+          </div>
+        </div>
+
+        <div className="lodges-hotels-slider">
+          <SectionCarousel />
+        </div>
+
+        <div className="experience-section">
+          <div className="experience-title">
+            <p className="heading-caps secondary-text">
+              More Experiences
+            </p>
+            <h3 className="sub-head">
+              A collection of life-enriching experiences
+            </h3>
+          </div>
+
+          <div className="experience-details">
+            <UiCardExperience />
           </div>
         </div>
       </main>
