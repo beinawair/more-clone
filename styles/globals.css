@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&display=swap');
 
 :root {
   --bg-color-dark: #262633;
@@ -98,6 +98,13 @@ section {
   align-items: center;
 }
 
+.links-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .links-list > li {
   list-style-type: none;
   font-weight: 400;
@@ -110,12 +117,6 @@ section {
 
 .links-list > li:hover {
   border-bottom: 1px solid #acacac;
-}
-
-.links-list {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
 }
 
 .nav-primary-logo {
@@ -296,4 +297,218 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   align-items: stretch;
+}
+
+.home-intro-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.secondary-text {
+  width: 28rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-size: .75rem;
+  line-height: 1.5;
+  color: var(--bg-color-dark);
+}
+
+.home-intro-section .home-intro-title {
+  font-size: 8.12rem;
+  line-height: 8.12rem;
+  margin: 0;
+  width: 91%;
+  color: var(--bg-color-dark);
+}
+
+.home-intro-section .intro-container {
+  position: relative;
+  top: -2.75rem;
+  height: auto;
+  z-index: -1;
+  background: rgba(220,220,221,.3);
+  max-width: 80vw;
+  padding: 5rem 15rem;
+  margin-left: 0 !important;
+}
+
+.home-intro-section .intro-container > p {
+  font-weight: 300;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.home-intro-section .title-section {
+  margin: 0 7.5rem;
+}
+
+.intro-container .intro-content-bottom {
+  padding: 0.25rem 1rem 0;
+  font-weight: 300;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+  margin: 0;
+}
+
+.residence-section {
+  width: 100%;
+}
+
+.residence-maps {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7.5rem;
+}
+
+.residence-map_heading {
+  width: 60%;
+}
+
+.residence-map_heading .sub-heading {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 0;
+  color: var(--bg-color-dark);
+}
+
+.residence-map_copy {
+  width: 40%;
+}
+
+.intro-content {
+  font-weight: 300;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.image-1 {
+  background-image: url('/images/lodges-hotels/Lion_Sands_Ivory_Lodge_3_Villa_Private_Deck_and_Plunge_Pool7.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-2 {
+  background-image: url('/images/lodges-hotels/Marataba_Safari_Lodge_Tented_Suite_3_Views-2.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-3 {
+  background-image: url('/images/lodges-hotels/Stanley___Livingston_2_Guest_Lounge_Area-1.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lodges-hotels-slider {
+  width: 100%;
+}
+
+/* flickity */
+.flickity-prev-next-button {
+  border-radius: 0 !important;
+}
+
+.flickity-prev-next-button.next {
+  right: 0 !important;
+}
+.flickity-prev-next-button.previous {
+  left: 0 !important;
+}
+
+.outer-wrapper-carousel {
+  margin: 6rem 0;
+}
+
+.carousel-cell {
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.overlay-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color-dark);
+  opacity: .2;
+}
+
+.carousel-cell .inner-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.text-carousel .subtitle {
+  text-transform: uppercase;
+  color: var(--bg-color-white);
+  font-weight: 300;
+  font-size: var(--font-body-bigger);
+}
+
+.text-carousel .title {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  color: var(--bg-color-white);
+  margin-bottom: 0;
+}
+
+.text-carousel .carousel-text-body {
+  font-size: var(--font-sub-title);
+  color: var(--bg-color-white);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.button-carousel .btn {
+  border: 1px solid var(--bg-color-white);
+  outline: none;
+  background: transparent;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: var(--bg-color-white);
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: var(--font-body);
+}
+/* end flickity */
+
+.experience-section {
+  margin-top: 6rem;
+}
+
+.experience-title {
+  margin: 0 20rem;
+}
+
+.experience-title .sub-head {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 0;
+  color: var(--bg-color-darks);
 }
