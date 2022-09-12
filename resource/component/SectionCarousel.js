@@ -1,19 +1,22 @@
 import Flickity from 'react-flickity-component'
 
-import { HotelLodges } from '../config/lodgeHotelList';
-import UiCards from '../ui/UiCards';
+const options = {
+    initialIndexl: 0,
+    cellSelector: '.carousel-cell',
+    wrapAround: true,
+    autoPlay: true,
+}
 
-const SectionCarousel = () => {
+const SectionCarousel = ({ children }) => {
     return (
         <div className='outer-wrapper-carousel'>
             <Flickity
                 className={'carousel'}
                 elementType={'div'}
-                options={{initialIndex: 0}}
-                autoPlay={1500}
-                pauseAutoPlayOnHover="true"
+                options={options}
             >
-                <UiCards data={HotelLodges} />
+                {/* <UiCards data={HotelLodges} /> */}
+                {children}
             </Flickity>
         </div>
     );

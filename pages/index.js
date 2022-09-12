@@ -9,6 +9,8 @@ import UiFooterSection from '../resource/ui/UiFooterSection'
 import ResidenceMapSection from '../resource/component/homepage/SectionResidenceMap'
 import SectionCarousel from '../resource/component/SectionCarousel'
 import UiCardExperience from '../resource/ui/UiCardExperience'
+import UiCards from '../resource/ui/UiCards'
+import { HotelLodges, ExperienceList } from '../resource/config/lodgeHotelList'
 
 export default function Home() {
   return (
@@ -84,7 +86,9 @@ export default function Home() {
         </div>
 
         <div className="lodges-hotels-slider">
-          <SectionCarousel />
+          <SectionCarousel>
+            <UiCards data={HotelLodges} />
+          </SectionCarousel>
         </div>
 
         <div className="experience-section">
@@ -98,8 +102,11 @@ export default function Home() {
           </div>
 
           <div className="experience-details">
-            <UiCardExperience />
+            <SectionCarousel>
+              <UiCardExperience data={ExperienceList} />
+            </SectionCarousel>
           </div>
+
         </div>
       </main>
 
