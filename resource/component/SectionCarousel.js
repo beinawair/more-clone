@@ -3,7 +3,7 @@ import Flickity from 'react-flickity-component'
 import { HotelLodges } from '../config/lodgeHotelList';
 import UiCards from '../ui/UiCards';
 
-const SectionCarousel = () => {
+const SectionCarousel = ({ children }) => {
     return (
         <div className='outer-wrapper-carousel'>
             <Flickity
@@ -13,7 +13,8 @@ const SectionCarousel = () => {
                 autoPlay={1500}
                 pauseAutoPlayOnHover="true"
             >
-                <UiCards data={HotelLodges} />
+                {/* <UiCards data={HotelLodges} /> */}
+                {children}
             </Flickity>
         </div>
     );
